@@ -59,7 +59,10 @@ hard_link_static = false
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
 #
-taxonomies = []
+taxonomies = [
+    { name = "tags"},
+    { name = "categories"}
+]
 
 # When set to "true", a search index is built from the pages and section
 # content for `default_language`.
@@ -201,7 +204,7 @@ comment = false                       # Whether to show giscus comment section b
 copy = true                           # Whether to add a copy button on code blocks by default
 back_to_top = true                    # Whether to show back-to-top button by default
 
-outdate_alert = true                 # Whether to show outdate alert by default
+outdate_alert = false                 # Whether to show outdate alert by default
 outdate_alert_days = 183              # How many days will a post be outdated by default
 outdate_alert_text_before = "This article was last updated "
 outdate_alert_text_after = " days ago and may be out of date."
