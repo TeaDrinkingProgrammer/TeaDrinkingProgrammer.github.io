@@ -1,7 +1,7 @@
 +++
 title = "How to make your blog more Blazingly Fast™"
 date = 2023-08-26
-draft = false
+draft = true
 
 [taxonomies]
 categories = ["dev"]
