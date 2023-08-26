@@ -59,4 +59,4 @@ These were the songs I was listening to during the making of this post.
 [Vulfpeck Live at Madison Square Garden](https://www.youtube.com/watch?v=rv4wf7bzfFE)
 [Joni Mitchell Shadows And Light](https://www.youtube.com/watch?v=mWyfkFogGeU&list=OLAK5uy_k0IjOTynmaZNR9SldIRbJ5pdE8Y9ciD8k)
 
-Note to self: I listen to a lot of live albums
+Note to self: I listen to a lot of live albums.
