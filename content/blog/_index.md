@@ -13,4 +13,4 @@ display_tags = true
 truncate_summary = false
 +++
 
-These are my blogposts
+No blogposts ... yet

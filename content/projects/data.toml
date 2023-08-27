@@ -4,5 +4,5 @@
     tags = ["webdev"]
     links = [
         { name = "Github", url = "https://github.com/TeaDrinkingProgrammer/TeaDrinkingProgrammer.github.io" },
-        { name = "Blogpost", url = "blog/how-the-sausage-was-made"}
+        { name = "Blogpost", url = "blog/how-to-make-your-blog-blazingly-fast/"}
     ]
