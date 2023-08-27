@@ -184,7 +184,7 @@ index_format = "elasticlunr_javascript"
 [extra]
 
 # Serene settings:
-name = "Stijn van Houwelingen"                         # Your name
+name = "Stijn van Houwelingen he/him"                         # Your name
 id = "TeaDrinkingProgrammer"                          # Your id / username / handle
 home = "home" # Home name
 bio = "A programming student from the Netherlands. Loves music, languages and programming"                          # Your bio
