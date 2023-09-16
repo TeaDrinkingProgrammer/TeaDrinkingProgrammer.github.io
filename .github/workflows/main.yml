@@ -8,6 +8,16 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v3.0.0
+        with:
+          submodules: recursive
+          token: ${{ secrets.TOKEN }}
+
+      - name: Prebuild
+        uses: oven-sh/setup-bun@v1
+      - run: bun install
+        working-directory: ./themes/tranquil
+      - run: bun x tailwindcss -i styles/styles.css -o static/styles/styles.css --minify
+        working-directory: ./themes/tranquil
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
