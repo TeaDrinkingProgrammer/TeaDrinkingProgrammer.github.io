@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://teadrinkingprogrammer.github.io/sitemap.xml
