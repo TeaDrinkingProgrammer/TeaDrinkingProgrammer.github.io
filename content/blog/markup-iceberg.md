@@ -153,7 +153,7 @@ header-includes: |
 hello there
 \newpage
 ```
-As you can see, the seperation between settings and content is very clear in the Pandoc Markdown and the syntax is a lot more concise and easy to read. Pandoc Markdown also allows you to use snippets of LaTeX. This is very usefull for the 5% of the time when you need to do something which you can't do in Markdown, like start a new page. The result is still 95% readable Markdown with some LaTeX commands here and there.
+As you can see, the seperation between settings and content is very clear in the Pandoc Markdown and the syntax is a lot more concise and easy to read. Pandoc Markdown also allows you to use snippets of LaTeX. This is very usefull for the 5% of the time when you need to do something which you can't do in Markdown, like start a new page. The result is still 95% readable Markdown with some LaTeX commands here and there. 
 
 When using this setup, the pipeline is like this:
 
@@ -161,6 +161,8 @@ Pandoc Markdown -> LaTeX -> _anything_
 
 This is usefull to remember when you are debugging your frontformatter: if LaTeX has an error, first look in your Frontformatter/Pandoc.
 This anything can be a PDF document for example.
+
+This pattern of most of the content being Markdown and a small percent being some kind of "escape hatch system" is very common when using Markdown. For some systems, the escape hatch is HTML (which is support most of the time as Markdown is a superset of HTML), most static site generators have "shortcodes" and as we have just seen, Pandoc Markdown has LaTeX.
 
 # Essays with Markdown
 
