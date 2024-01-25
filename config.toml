@@ -212,7 +212,7 @@ outdate_alert_text_after = " days ago and may be out of date."
 call_to_action_footer_text = "Did you like this blogpost? Then consider subscribing via email or RSS. The email newsletter uses <a href=\"https://buttondown.email/refer/TDP\" target=\"_blank\"> Buttondown</a>, which does not track you."
 call_to_action_footer = true
 
-footer_copyright = "© 2023 Stijn van Houwelingen"
+footer_copyright = "© 2023-2024 Stijn van Houwelingen"
 footer_credits = true                 # Whether to show "Powered by Zola and Serene" in footer
 
 footer_privacy_text = "Privacy Policy"
