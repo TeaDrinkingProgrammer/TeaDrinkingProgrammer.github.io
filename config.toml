@@ -186,7 +186,10 @@ index_format = "elasticlunr_javascript"
 name = "Stijn van Houwelingen he/him"                         # Your name
 id = "TeaDrinkingProgrammer"                          # Your id / username / handle
 home = "home" # Home name
-bio = "A programming student from the Netherlands. Loves music, languages and programming"                          # Your bio
+bio = """
+A programming student from the Netherlands. Loves music, languages and programming.
+
+<p class="italic text-sm">Logo by <a href="https://emilybau.com/" target="_blank">Emily Baucom</a></p>"""                        # Your bio
 avatar = "icons/logo.png"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/TeaDrinkingProgrammer" },
