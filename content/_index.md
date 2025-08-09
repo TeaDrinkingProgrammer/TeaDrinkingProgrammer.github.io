@@ -16,4 +16,4 @@ On the projects page, you can see some of the projects I have made!
 
 This website is made with Zola, Rust and the Selene theme. You can read more about how I made this website on the [blog-post](@/blog/how-to-make-your-blog-blazingly-fast.md).
 
-If you want, you can subscribe using [RSS](/blog/atom.xml) or [email](https://buttondown.email/TDP).
+If you want, you can subscribe using [Atom feed](atom.xml) or [email](https://buttondown.email/TDP).

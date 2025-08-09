@@ -33,12 +33,14 @@ minify_html = true
 ignored_content = []
 
 # When set to "true", a feed is automatically generated.
-generate_feed = false
+generate_feeds = true
 
 # The filename to use for the feed. Used as the template filename, too.
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "atom.xml"
+feed_filenames = ["atom.xml"]
+
+author = "TeaDrinkingProgrammer"
 
 # The number of articles to include in the feed. All items are included if
 # this limit is not set (the default).
@@ -212,7 +214,7 @@ outdate_alert_days = 183              # How many days will a post be outdated by
 outdate_alert_text_before = "This article was last updated "
 outdate_alert_text_after = " days ago and may be out of date."
 
-call_to_action_footer_text = "Did you like this blogpost? Then consider subscribing via email or RSS. The email newsletter uses <a href=\"https://buttondown.email/refer/TDP\" target=\"_blank\"> Buttondown</a>, which does not track you."
+call_to_action_footer_text = "Did you like this blogpost? Then consider subscribing via email or Atom feed. The email newsletter uses <a href=\"https://buttondown.email/refer/TDP\" target=\"_blank\"> Buttondown</a>, which does not track you."
 call_to_action_footer = true
 
 footer_copyright = "© 2023-2024 Stijn van Houwelingen"

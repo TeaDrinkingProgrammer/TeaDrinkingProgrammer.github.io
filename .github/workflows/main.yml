@@ -7,19 +7,19 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.TOKEN }}
 
       - name: Prebuild
-        uses: oven-sh/setup-bun@v1
+        uses: oven-sh/setup-bun@v2
       - run: bun install
         working-directory: ./themes/tranquil
       - run: bun x tailwindcss -i styles/styles.css -o static/styles/styles.css --minify
         working-directory: ./themes/tranquil
       - name: Build and deploy
-        uses: shalzz/zola-deploy-action@v0.17.2
+        uses: shalzz/zola-deploy-action@v0.21.0
         env:
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
