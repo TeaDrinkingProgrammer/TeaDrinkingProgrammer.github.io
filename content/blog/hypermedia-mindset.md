@@ -23,7 +23,7 @@ Hypermedia at the beginning of the internet had two problems, though: it was har
 
 ## Single Page applications
 
-Single Page Applications were made possible by the rise of JavaScript as a language that could be used within the browser. Because single page applications run on the client-side, interactivity was not an issue any more at all. This is the reason most of the industry moved towards it and moved away from JQuery: we as developers want to make good experiences for the end-user. SPAs also come with a big disadvantage, though: they do not make use of the power of Hypermedia. In short, this means that, for SPAs, you need to keep state synchronised between the server and the client. This means that you have to do a lot of stuff twice: routing, authentication and authorisation, data validation/sanitation, translations, and most importantly: data serialisation and deserialisation.
+Single Page Applications were made possible by the rise of JavaScript as a language that could be used within the browser. Because single page applications run on the client-side, interactivity was not an issue any more at all. This is the reason most of the industry moved towards it and moved away from JQuery: we as developers want to make good experiences for the end-user. SPAs also come with a big disadvantage, though: they do not make use of the power of Hypermedia. In short, this means that, for SPAs, you need to keep state synchronised between the server and the client. This means that you have to do a lot of stuff twice: routing, authentication and authorisation, data validation/sanitation, translations, and most importantly: data serialization and deserialization.
 
 ## Hypermedia libraries: a modern spin on hypermedia
 
@@ -148,13 +148,13 @@ The following will animate the HTML:
 
 Notice how we don't need any code to fade out the notification. We leverage the fact that the CSS delay will start once the notification is in the DOM, in other words: we use the HDA flow to our advantage.
 
-This will create a small problem, though: if we keep receiving notifications, the notifications will fade away but pile up in the DOM. I would also like the user to be able to dismiss the notification. If you are not very familiar with Hypermedia apps, you might think this is impossible to do within the paradigm and we need to grasp for "hacks". This isn't the case, though: we can do some scripting while still working within the constrains of the Hypermedia architecture.
+This will create a small problem, though: if we keep receiving notifications, the notifications will fade away but pile up in the DOM. I would also like the user to be able to dismiss the notification. If you are not very familiar with Hypermedia apps, you might think this is impossible to do within the paradigm, and we need to grasp for "hacks". This isn't the case, though: we can do some scripting while still working within the constraints of the Hypermedia architecture.
 
 Scripting? I thought Hypermedia Driven Apps were all about _not_ using JavaScript?
 
 Well, this is partially true. The HDA archticture is all about using Hypermedia to transfer state instead of maintaining both client-side state and server-side state and having to synchronise it. Scripting can absolutely fit in this paradigm, as long as the script doesn't start maintaining state that is relevant for the server. Carson Gross, the guy behind HTMX who has lot's of excellent essays on SWE and Hypermedia, has written [a great article](https://htmx.org/essays/hypermedia-friendly-scripting/) about how scripting fits in to HDA apps.
 
-In this example, we have already used our hypermedia response and some CSS to instruct the client to fade out the element after a certain time. We just need a tiny bit of scripting to remove the element after the CSS animation is done. We could do this in Vanilla JS, but there are tools that slot into the hypermedia paradigm a lot better, especially with regards to [Locality of Behaviour](https://htmx.org/essays/locality-of-behaviour/). The authors of HTMX have built [Hyperscript](https://hyperscript.org/docs/#introduction) for this purpose, but I prefer sticking with what I know, so I went with AlpineJS. [AlpineJS](https://alpinejs.dev/) is a lightweight Javascript library that makes it a lot easier to enhance HTML with some scripting. In that way, it is similar to JQuery, but it's syntax takes notes from modern SPA frameworks and it respects Locality of Behaviour.
+In this example, we have already used our hypermedia response and some CSS to instruct the client to fade out the element after a certain time. We just need a tiny bit of scripting to remove the element after the CSS animation is done. We could do this in Vanilla JS, but there are tools that slot into the hypermedia paradigm a lot better, especially with regards to [Locality of Behaviour](https://htmx.org/essays/locality-of-behaviour/). The authors of HTMX have built [Hyperscript](https://hyperscript.org/docs/#introduction) for this purpose, but I prefer sticking with what I know, so I went with AlpineJS. [AlpineJS](https://alpinejs.dev/) is a lightweight Javascript library that makes it a lot easier to enhance HTML with some scripting. In that way, it is similar to JQuery, but it's syntax takes notes from modern SPA frameworks, and it respects Locality of Behaviour.
 
 In our example, adding this behaviour is a piece of cake:
 
@@ -240,7 +240,7 @@ The last thing we have to do, is put the following HTML in the base.html file:
 
 It styles the div so that it is above everything else (`z-50`), puts it on the bottom left (`inset-0`) and reverses the order so the elements go from the bottom up. The include statement references our previous HTML.
 
-And that's it. We have a full notification system that is responsive, modern and integrated with our messages framework all with minimal code and only a few lines of client side scripting and no meaningfull client-side state or logic.
+And that's it. We have a full notification system that is responsive, modern and integrated with our messages framework all with minimal code and only a few lines of client side scripting and no meaningful client-side state or logic.
 
 ## Conclusion
 
